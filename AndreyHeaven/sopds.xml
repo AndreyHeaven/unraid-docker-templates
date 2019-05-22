@@ -19,7 +19,7 @@
   <Project>http://www.sopds.ru/</Project>
   <Overview/>
   <Registry>https://hub.docker.com/r/zveronline/sopds</Registry>
-  <Repository>zveronline/docker-sopds</Repository>
+  <Repository>zveronline/sopds</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Networking>
