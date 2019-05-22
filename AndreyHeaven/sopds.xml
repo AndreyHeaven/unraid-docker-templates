@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/AndreyHeaven/unraid-docker-templates/master/AndreyHeaven/sopds.xml</TemplateURL>
   <Beta>False</Beta>
   <Category>MediaApp:Books</Category>
   <Date>2019-05-23</Date>
