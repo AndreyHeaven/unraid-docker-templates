@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <TemplateURL/>
+  <Beta>False</Beta>
+  <Category>MediaApp:Books</Category>
+  <Date>2019-05-23</Date>
+  <changes>[center] [b]AndreyHeaven:[/b] Simple OPSD [/center]
+
+[center][font size=4]Change Log[/font][/center]
+
+[font size=3]2019.05.23[/font]
+- Initial release of the Simple OPDS template
+    
+    
+  </changes>
+  <Name>Simple OPDS</Name>
+  <Support/>
+  <Description/>
+  <Project>http://www.sopds.ru/</Project>
+  <Overview/>
+  <Registry>https://hub.docker.com/r/zveronline/sopds</Registry>
+  <Repository>zveronline</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8001</HostPort>
+        <ContainerPort>8001</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir/>
+      <ContainerDir>/library</ContainerDir>
+      <Mode>r</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:8001]/</WebUI>
+  <Icon/>
+  <DonateText/>
+  <DonateLink/>
+  <DonateImg/>
+  <BaseImage/>
+</Container>
