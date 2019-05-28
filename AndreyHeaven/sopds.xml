@@ -38,6 +38,11 @@
       <ContainerDir>/library</ContainerDir>
       <Mode>r</Mode>
     </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/sopds_db</HostDir>
+      <ContainerDir>/var/lib/pgsql</ContainerDir>
+      <Mode>r</Mode>
+    </Volume>
   </Data>
   <WebUI>http://[IP]:[PORT:8001]/</WebUI>
   <Icon/>
