@@ -2,16 +2,17 @@
 My own docker repository for unRAID
 
 
-## Simple OPDS
-# Create superuser
+# Simple OPDS
+
+after install "open console" and 
+
+## Create superuser
 ~~~~
-docker exec -ti sopds bash
 python3 manage.py createsuperuser
 ~~~~
 
-# Scan library
+## Scan library
 
 ~~~~
-docker exec -ti sopds bash
 python3 manage.py sopds_util setconf SOPDS_SCAN_START_DIRECTLY True
 ~~~~
