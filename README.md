@@ -3,13 +3,13 @@ My own docker repository for unRAID
 
 
 ## Simple OPDS
-#Create superuser
+# Create superuser
 ~~~~
 docker exec -ti sopds bash
 python3 manage.py createsuperuser
 ~~~~
 
-#Scan library
+# Scan library
 
 ~~~~
 docker exec -ti sopds bash
