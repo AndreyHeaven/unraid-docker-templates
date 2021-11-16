@@ -18,8 +18,8 @@
   <Description/>
   <Project>https://www.odoo.com/</Project>
   <Overview/>
-  <Registry>http://tower.local:5000/odoo</Registry>
-  <Repository>odoo</Repository>
+  <Registry>http://tower.local:5000/andreyheaven/odoo</Registry>
+  <Repository>andreyheaven/odoo</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Network Default="bridge">bridge</Network>
