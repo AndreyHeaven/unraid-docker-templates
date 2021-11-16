@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <TemplateURL>https://raw.githubusercontent.com/AndreyHeaven/unraid-docker-templates/master/AndreyHeaven/odoo.xml</TemplateURL>
+  <Beta>False</Beta>
+  <Category>ERP</Category>
+  <Date>2021-11-16</Date>
+  <changes>[center] [b]AndreyHeaven:[/b] Odoo [/center]
+
+[center][font size=4]Change Log[/font][/center]
+
+[font size=3]2021.11.16[/font]
+- Initial release of the Odoo 14 template
+    
+    
+  </changes>
+  <Name Default="Odoo">Odoo 14</Name>
+  <Support/>
+  <Description/>
+  <Project>https://www.odoo.com/</Project>
+  <Overview/>
+  <Registry>http://tower.local:5000/odoo</Registry>
+  <Repository>odoo</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Network Default="bridge">bridge</Network>
+  <Config 
+    Type="Path" 
+    Name="Addons" 
+    Target="/mnt/extra-addons" 
+    Default="/mnt/user/appdata/odoo/addons" 
+    Mode="rw" 
+    Required="false">/mnt/user/appdata/odoo/addons</Config>
+  <Config 
+    Type="Path" 
+    Name="Config" 
+    Target="etc/odoo" 
+    Default="/mnt/user/appdata/odoo/config" 
+    Mode="rw" 
+    Required="true">/mnt/user/appdata/odoo/config</Config>
+  <Config 
+    Type="Port" 
+    Name="Web UI" 
+    Target="8069" 
+    Default="8069" 
+    Mode="tcp" 
+    Display="always" 
+    Required="true">8069</Config>
+  <WebUI>http://[IP]:[PORT:8069]/</WebUI>
+
+</Container>
